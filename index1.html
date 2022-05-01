@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Turn it up in here</title>
+  </head>
+  <body>
+    <h2>What Can JavaScript Do?</h2>
+
+    <p>JavaScript can change HTML in ways no other language Can.</p>
+
+    <p>In this case JavaScript changes the value of the source of this bulb and lightens up our world.</p>
+
+    <button id="myBtn1">Lights On</button>
+
+    <img id="myImage" src="img/light-bulb-off.gif" >
+
+    <button id="myBtn2">Lights Off</button>
+
+    <!-- Internal JavaScript -->
+
+    <script>
+      const btn1 = document.getElementById("myBtn1");
+      const btn2 = document.getElementById("myBtn2");
+      var img= document.getElementById("myImage");
+
+
+      btn1.addEventListener("click",function(){
+        img.src="img/light-bulb-on1.gif";
+      })
+
+      btn2.addEventListener("click",function(){
+        img.src="img/light-bulb-off.gif";
+      })
+
+    </script>
+
+  </body>
+</html>
